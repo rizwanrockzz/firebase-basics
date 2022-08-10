@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.big-cricle {
+    background-color: #027a60;
+    width: 600px;
+    height: 600px;
+    margin-top: -200px;
+    margin-left: -120px;
+    border-radius: 50%;
+}
+
+.small-cricle {
+    background-color: #003847;
+    width: 900px;
+    height: 900px;
+    float: right;
+    margin-bottom: 0px;
+    margin-top: -200px;
+    margin-right: -400px;
+    border-radius: 50%;
+
+}
+
+/* sign up */
+.containr {
+    position: fixed;
+    margin-top: 18px;
+    width: 600px;
+    height: 590px;
+    z-index: 9;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.content-main {
+    width: 600px;
+    height: 600px;
+    padding: 2rem;
+}
+
+.myform-1 {
+    padding: .9rem;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 18px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.myform-1 p {
+    color: #003847;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.input-group .Input {
+    margin: 12px;
+    width: 190px;
+    border-radius: 5px;
+    padding: .7rem;
+    padding-left: 2.2rem;
+    border: 1px solid #bebebe;
+
+}
+
+.input-group .fas {
+    position: relative;
+    color: #027a60;
+    margin: 2px;
+    top: 43px;
+    left: 20px;
+    font-size: 1.2rem;
+}
+
+.input-group .Input:focus {
+    outline: none;
+}
+
+.text-down {
+    text-align: center;
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.text-down p {
+    width: 300px;
+    font-size: 17px;
+}
+
+.text-down button {
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: #027a60;
+    font-size: 1rem;
+    letter-spacing: .8px;
+    font-weight: 500;
+    color: white;
+}
+
+.text-down button:hover {
+    cursor: pointer;
+    background: #003847;
+}
+
+@media screen and (max-width: 450px) {
+
+    .big-cricle,
+    .small-cricle {
+        width: 400px;
+        height: 400px;
+    }
+
+    .small-cricle {
+        position: fixed;
+        bottom: -30%;
+        right: 50%;
+    }
+
+    .containr,
+    .content-main {
+        width: 350px;
+        height: 550px;
+    }
+
+    .content-main {
+        padding: .4rem;
+    }
+
+    .myform-1 {
+        margin: 9px;
+        padding: .7rem;
+    }
+
+    .input-group .Input {
+        margin: 7px;
+        width: 130px;
+        padding-left: 2.5rem;
+    }
+
+    .text-down button {
+        width: 150px;
+        margin-right: 0px;
+        padding: .2rem;
+    }
+}

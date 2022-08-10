@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="big-cricle"></div>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo">
+            </div>
+            <div class="form-place">
+                <div id="loginForm" class="myform">
+                    <h2>welcome</h2>
+                    <h1>ca firms</h1>
+                    <div class="form-area">
+                        <div class="from-group">
+                            <i class="fas fa-user"></i>
+                            <!-- email -->
+                            <input type="text" placeholder="Email or Pan No" class="myInput" required name="email"
+                                id="email">
+                        </div>
+                        <div class="from-group">
+                            <i class="fas fa-lock"></i>
+                            <!-- password -->
+                            <input type="password" placeholder="Password" class="myInput" required name="password"
+                                id="password">
+                        </div>
+                    </div>
+                    <button type="submit" id="signinbtn" class="myBtn">Log In</button>
+                    <button id="getinfobtn" class="myBtn">get info</button>
+
+                    <p>Can't Log in ?<a href="#" class="got">Forgot Password</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="small-cricle"></div>
+    <!-- scripts -->
+    <script type="module" src="login.js"></script>
+</body>
+
+</html>

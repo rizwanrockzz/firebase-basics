@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.big-cricle {
+    background-color: #027a60;
+    width: 600px;
+    height: 600px;
+    margin-top: -100px;
+    margin-left: -200px;
+    border-radius: 50%;
+}
+
+.small-cricle {
+    background-color: #003847;
+    width: 900px;
+    height: 900px;
+    float: right;
+    margin-bottom: 0px;
+    margin-top: -200px;
+    margin-right: -400px;
+    border-radius: 50%;
+
+}
+
+.container {
+    position: fixed;
+    width: 900px;
+    margin-top: 10px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 2s ease-in-out;
+    border-radius: 18px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.content {
+    width: 900px;
+    height: 600px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1.7fr;
+    gap: 2rem;
+}
+
+.logo img {
+    width: 350px;
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 6%;
+}
+
+.myform {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.myform h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #027a60;
+    margin: 12px;
+}
+
+.myform h1 {
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: 400;
+    color: #003847;
+    font-size: 2.5rem;
+}
+
+.form-area {
+    margin: 10px;
+    padding: .8rem;
+}
+
+.from-group .myInput {
+    margin: 12px;
+    width: 270px;
+    border-radius: 15px;
+    padding: 1rem;
+    padding-left: 2.2rem;
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.from-group .myInput:focus {
+    outline: none;
+}
+
+.from-group .fas {
+    position: relative;
+    color: #027a60;
+    top: 2px;
+    left: 44px;
+    font-size: 1.2rem;
+}
+
+.myBtn {
+    margin: 28px;
+    margin-right: 17px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #027a60;
+    background: #027a60;
+    font-size: 1.2rem;
+    letter-spacing: .8px;
+    font-weight: 500;
+    color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.myBtn:hover {
+    cursor: pointer;
+    background: #003847;
+}
+
+.got {
+    margin: 3px;
+    padding: 1rem;
+    color: #027a60;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .container,
+    .content {
+        width: 350px;
+        height: 550px;
+    }
+    .big-cricle , .small-cricle{
+        width: 400px;
+        height: 400px;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .small-cricle{
+        position: fixed;
+        bottom: -30%;
+        right: 50%;
+       
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        height: 125px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        float: center;
+        width: 120px;
+        top: 0%;
+        left: 0%;
+    }
+    .myform{
+        align-items: center;
+    }
+    .myform{
+        width: 320px;
+        height: 360px;
+    }
+    .myform h2{
+        font-size: 1rem;
+        margin: 8px;
+    }
+    .myform h1{
+        font-size: 1.7rem;
+    }
+    .form-area{
+        padding: .5rem;
+        margin: 2px auto;
+    }
+    .from-group .myInput{
+        width: 250px;
+    }
+    .myBtn{
+        margin: 4px auto;
+        width: 100px;
+    }
+    p{
+        margin: 10px auto;
+    }
+}
