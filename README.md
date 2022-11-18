@@ -1,6 +1,6 @@
 # firebase-basics
 firebase
 
-[signup](https://ca.rizwanrockzz.tech/signup)
+[signup](https://rizwanrockzz.github.io/firebase-basics/signup)
 
-[login](https://ca.rizwanrockzz.tech/login)
+[login](https://rizwanrockzz.github.io/firebase-basics/login)
